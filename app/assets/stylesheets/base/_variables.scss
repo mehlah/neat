@@ -1,0 +1,33 @@
+// CONSTANTS
+$COLUMN-WIDTH: column-width;
+$GUTTER-WIDTH: gutter-width;
+$TOTAL-COLUMNS: total-columns;
+
+// GRID
+$-neat-default-column-width: golden-ratio(1em, 3) !default;
+$-neat-default-gutter-width: golden-ratio(1em, 1) !default;
+$-neat-default-grid-columns: 12 !default;
+$-neat-default-grid: -neat-new-grid($-neat-default-column-width, $-neat-default-gutter-width, $-neat-default-grid-columns);
+
+$column: golden-ratio(1em, 3) !default; // Column width
+$gutter: golden-ratio(1em, 1) !default; // Gutter between each two columns
+$grid-columns: 12 !default; // Total number of columns in the grid
+$max-width: em(1088) !default; // Max-width of the outer container
+$border-box-sizing: true !default; // Makes all elements have a border-box layout
+$default-feature: min-width; // Default @media feature for the breakpoint() mixin
+$default-layout-direction: LTR !default;
+
+// VISUAL GRID
+$visual-grid: false !default; // Display the base grid
+$visual-grid-color: #EEE !default;
+$visual-grid-index: back !default; // Show grid behind content (back) or overlay it over the content (front)
+$visual-grid-opacity: 0.4 !default;
+$visual-grid-breakpoints: () !default;
+
+// PRIVATE
+$parent-columns: $grid-columns !default;
+$fg-column: $column;
+$fg-gutter: $gutter;
+$fg-max-columns: $grid-columns;
+$container-display-table: false !default;
+$layout-direction: nil !default;

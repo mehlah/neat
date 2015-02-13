@@ -1,0 +1,7 @@
+@mixin grid-column-gradient($values...) {
+  background-image: -webkit-linear-gradient(left, $values);
+  background-image: -moz-linear-gradient(left, $values);
+  background-image: -ms-linear-gradient(left, $values);
+  background-image: -o-linear-gradient(left, $values);
+  background-image: unquote("linear-gradient(to left, #{$values})");
+}
